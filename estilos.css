@@ -1,0 +1,229 @@
+/* Reset de estilos básicos para garantir consistência entre navegadores */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilize as bordas das imagens */
+img {
+    border: 1px solid #333; /* Borda de 2 pixels de largura, sólida e com cor #333 */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    float: center; /* Alinhar à direita */
+    margin-right: 20px; /* Espaço à direita do botão */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Cor de destaque ao passar o mouse */
+}
+
+
+
+.destinos {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: greenyellow;
+    color: #333;
+    font-size: 20px;
+}
+
+.destino {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: greenyellow;
+}
+
+.destino img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a galeria de fotos */
+.galeria {
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.fotos img:hover {
+    transform: scale(1.1); /* Aumentar a imagem ao passar o mouse */
+}
+
+
+
+
+/* Estilos para o lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 20px auto;
+    display: block;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* Estilos para as seções de redes sociais, menu e newsletter no rodapé */
+.redes-sociais, .menu-rodape, .newsletter {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+
+/* Estilos para os títulos das seções no rodapé */
+.redes-sociais h3, .menu-rodape h3, .newsletter h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a lista de redes sociais */
+.redes-sociais ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centralizar os ícones horizontalmente */
+}
+
+/* Estilos para os ícones de redes sociais no rodapé */
+.redes-sociais li {
+    display: inline-block; /* Exibir em linha horizontalmente */
+    margin-right: 10px; /* Espaço entre os ícones */
+}
+
+/* Estilos para os ícones de redes sociais */
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilos para o formulário de newsletter */
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para o campo de entrada de e-mail */
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+/* Estilos para o botão de assinatura */
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Estilos de hover para o botão de assinatura */
+.newsletter button:hover {
+    background-color: #128C7E; /* Cor de destaque ao passar o mouse */
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Linha superior */
+}
+
+
+
+

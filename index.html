@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramado Balonismo - Voo de Balão em Gramado RS</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logomarca Gramado Balonismo">
+    </header>
+    
+    <section class="destinos">
+        
+        <div class="destino">
+            <h3>Voo de Balão com saída de Gramado RS</h3><br>
+            <a href="https://wa.me/+5554999950311" class="whatsapp-button">WhatsApp</a><br><br>
+            <img src="imagens/balao.jpg" alt="Destino 1">
+        </div>
+    
+    </section>
+
+        <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="fecharLightbox()">
+        <span class="fechar" onclick="fecharLightbox()">&times;</span>
+        <img src="" id="lightbox-imagem" alt="Imagem Lightbox">
+    </div>
+
+
+   <section class="galeria">
+    <h3>Galeria de Fotos</h3>
+    <div class="fotos">
+        <a href="imagens/foto1.jpeg" class="lightbox-link" data-lightbox="foto1"><img src="imagens/foto1.jpeg" alt="Foto 1"></a>
+        <a href="imagens/foto2.jpeg" class="lightbox-link" data-lightbox="foto2"><img src="imagens/foto2.jpeg" alt="Foto 2"></a>
+        <a href="imagens/foto3.jpeg" class="lightbox-link" data-lightbox="foto3"><img src="imagens/foto3.jpeg" alt="Foto 3"></a>
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+</section>
+
+
+
+
+     <footer>
+        <div class="redes-sociais">
+    <h3>Redes Sociais</h3>
+    <ul>
+        <li><a href="#"><img src="imagens/facebook-icon.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="imagens/whatsapp-icon.png" alt="WhatsApp"></a></li>
+        <li><a href="#"><img src="imagens/instagram-icon.png" alt="Instagram"></a></li>
+        <!-- Adicione mais redes sociais conforme necessário -->
+    </ul>
+        </div>
+
+            <hr>
+        <div class="newsletter">
+            <h3>Assine nossa Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Seu e-mail">
+                <button type="submit">Assinar</button>
+            </form>
+        </div>
+    </footer>
+
+    <footer>
+        <p>&copy; 2023 Gramado Balonismo</p>
+    </footer>
+
+    <script>
+    const lightboxLinks = document.querySelectorAll('.lightbox-link');
+    
+    lightboxLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const imgSrc = this.getAttribute('href');
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            
+            const closeButton = document.createElement('span');
+            closeButton.className = 'fechar';
+            closeButton.innerHTML = '&times;';
+            
+            lightbox.appendChild(img);
+            lightbox.appendChild(closeButton);
+            document.body.appendChild(lightbox);
+            
+            closeButton.addEventListener('click', function () {
+                document.body.removeChild(lightbox);
+            });
+        });
+    });
+    </script>
+
+
+
+
+
+</body>
+</html>
